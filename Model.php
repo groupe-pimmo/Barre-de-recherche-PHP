@@ -96,10 +96,10 @@ class Model {
 	public function search_pro($infos){
 		try{
 			//Préparation de la requête
-			$requete = $this->bd->prepare('SELECT nom_prof, adresse, cp, ville, prestation, formule, telephone FROM professionnel WHERE cp=:cp AND formule=:formule');
+			$requete = $this->bd->prepare('SELECT nom_prof, adresse, cp, ville, prestation, formule, telephone FROM professionnel WHERE cp=:cp AND prestation=:prestation AND formule=:formule');
 			
 			//Remplacement des marqueurs de place par les valeurs
-			$marqueurs = ['cp', 'formule'];
+			$marqueurs = ['cp', 'prestation', 'formule'];
 			foreach ($marqueurs as $value) {
 				$requete->bindValue(':'. $value, $infos[$value]);
 			}
