@@ -1,0 +1,1 @@
+<a href="http://localhost:8888/Projet%20Prisca/Barre%20de%20recherche/index.php?controller=add&action=add_client"> <input type="button" value="Accueil"/> </a>
