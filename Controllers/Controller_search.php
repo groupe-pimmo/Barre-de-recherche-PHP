@@ -32,8 +32,6 @@
 
         }
 
-        public function action_default(){
-            $this->action_search_pro();
         }
     
 

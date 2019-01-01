@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title>Prestations</title>
+		<title>Professionnels</title>
 		<link rel="stylesheet" href="Content/css/nobel.css"/>
 	</head>
 	<body>
-        <p>Voici votre professionnels :</p>
+        <p>Voici les professionnels qui vont faire de vous des merveilles :</p>
         <table>
             <tr> <th>Nom</th> <th>Adresse</th> <th>CP</th> <th>Ville</th> <th>Prestation</th> <th>Formule</th> <th>Telephone</th> </tr>
-            <?php foreach($pro as $val) : ?>
+            <?php foreach($presta as $val) : ?>
                 <tr> 
                     <td> <?= e($val['nom_prof']) ?> </td> 
                     <td> <?= e($val['adresse']) ?> </td> 
